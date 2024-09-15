@@ -16,8 +16,9 @@ Open Browser And Navigate To Page
     ...    *Return:*
     ...    | =Description= | =Example value= |
     ...    | Nothing | None |
+    [Arguments]    ${url}=${UI_URL}
     DemoQADriver.Open Browser
-    DemoQADriver.Navigate To Page
+    DemoQADriver.Navigate To Page    ${url}
 
 Elements CheckBox: Navigate To Page
     [Documentation]    Elements CheckBox: Navigate To Page.
